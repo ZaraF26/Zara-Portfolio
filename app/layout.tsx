@@ -12,6 +12,8 @@ export const metadata: Metadata = {
   description: "Portflio website built with Next.js and Tailwind CSS",
 };
 
+import { Analytics } from "@vercel/analytics/next"
+
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -23,6 +25,7 @@ export default function RootLayout({
         className={`${font.className} antialiased bg-[#F6EEE1]`}
       >
         {children}
+        <Analytics/>
       </body>
     </html>
   );
