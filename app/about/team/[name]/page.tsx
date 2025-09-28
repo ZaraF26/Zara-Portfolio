@@ -1,8 +1,7 @@
-// import React from 'react';
+import React from 'react';
 
-// const TeamDetailsPage = async (params) => {
-//   const name = (await params).name;
-//   return <div className='text-black text-5xl'>Team member details page {name}</div>
-// };
+const TeamDetailsPage = () => {
+  return <div className='text-black text-5xl'>Team member details page</div>
+};
 
-// export default TeamDetailsPage;
+export default TeamDetailsPage;
