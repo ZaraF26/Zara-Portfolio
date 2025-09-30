@@ -13,6 +13,7 @@ export const metadata: Metadata = {
 };
 
 import { Analytics } from "@vercel/analytics/next"
+import ResponsiveNav from "@/components/Home/Navbar/ResponsiveNav";
 
 export default function RootLayout({
   children,
@@ -22,8 +23,8 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${font.className} antialiased bg-[#F6EEE1]`}
-      >
+        className={`${font.className} antialiased bg-[#F6EEE1]`}>
+          <ResponsiveNav/>
         {children}
         <Analytics/>
       </body>
