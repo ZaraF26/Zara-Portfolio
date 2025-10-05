@@ -12,14 +12,20 @@ export const NavLinks =[
     },
 
 
-     {
+    {
         id:3,
+        url:"#",
+        label: "Resume",
+    },
+
+     {
+        id:4,
         url:"#",
         label: "About",
     },
 
      {
-        id:4,
+        id:5,
         url:"#",
         label: "Contact",
     },
