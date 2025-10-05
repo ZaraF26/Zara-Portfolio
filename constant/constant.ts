@@ -18,14 +18,21 @@ export const NavLinks =[
         label: "Resume",
     },
 
-     {
+    {
         id:4,
+        url:"#",
+        label: "Skills",
+    },
+
+
+     {
+        id:5,
         url:"#",
         label: "About",
     },
 
      {
-        id:5,
+        id:6,
         url:"#",
         label: "Contact",
     },

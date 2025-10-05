@@ -1,5 +1,9 @@
 import React from 'react';
 import ResumeCard from './ResumeCard';
+import { FaCodepen, FaReact } from 'react-icons/fa';
+import { BsDatabase } from 'react-icons/bs';
+import { BiBadge } from 'react-icons/bi';
+
 
 const Resume = () => {
   return <div className='pt-20 pb-16 '>
@@ -9,10 +13,25 @@ const Resume = () => {
             <h1 className='text-3xl sm:text-4xl font-bold text-black'>
                 My Work <span className='text-red-800'>Experience</span>
                 </h1>
-                <div className='mt-10'>jh</div>
+                <div className='mt-10'>
+                    <ResumeCard Icon={FaCodepen} role="Backend Developer"/>
+                    <ResumeCard Icon={FaReact} role="Front-end Developer "/>
+                    <ResumeCard Icon={BsDatabase} role="UI/UX Developer"/>
+
+                </div>
         </div>
         {/* Education Section */}
-        <div>EDUCATION PART</div>
+        <div>
+              <h1 className='text-3xl sm:text-4xl font-bold text-black'>
+                My <span className='text-red-800'>Education</span>
+                </h1>
+            <div className='mt-10'>
+                    <ResumeCard Icon={BiBadge} role="WeThinkCode_" date="Sep 2024 - Present"/>
+                    <ResumeCard Icon={FaReact} role="Cambridge AS Levels" date="Jan 2019 - Dec 2020"/>
+                    <ResumeCard Icon={BsDatabase} role="Islamia" date="Jan 2010 - Dec 2013"/>
+
+                </div>
+        </div>
     </div>
   </div>
   
