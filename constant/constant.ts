@@ -8,36 +8,21 @@ export const NavLinks =[
      {
         id:2,
         url:"#",
-        label: "Services",
+        label: "Projects",
     },
+
 
      {
         id:3,
-        url:"#",
-        label: "Resume",
-    },
-
-     {
-        id:4,
-        url:"#",
-        label: "Works",
-    },
-
-     {
-        id:5,
         url:"#",
         label: "Skills",
     },
 
      {
-        id:6,
-        url:"#",
-        label: "Testimonial",
-    },
-
-     {
-        id:7,
+        id:4,
         url:"#",
         label: "Contact",
     },
+
+
 ]
