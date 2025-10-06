@@ -7,26 +7,34 @@ import Skills from './Skills/Skills';
 import Blog from './Blog/Blog';
 import Contact from './Contact/Contact';
 import AOS from 'aos';
-import 'aos/dist/aos.css'; // You can also use <link> for styles
+import 'aos/dist/aos.css'; //
 import { once } from 'events';
-
+import 'aos/dist/aos.css';
 
 const Home = () => {
+  useEffect(() => {
+    // Initialize AOS
+    AOS.init({
+      duration: 1000,
+      easing: 'ease',
+      once: false, // <-- animate every time the element comes into view
+      anchorPlacement: 'top-bottom',
+    });
 
-  useEffect(()=> {
-    const initAOS = async () => {
-      await import ('aos');
-      AOS.init({
-        duration: 1000,
-        easing:'ease',
-        once: true,
-        anchorPlacement: 'top-bottom',
-      });
+    // Refresh AOS on scroll or click (for nav links)
+    const refreshAOS = () => {
+      AOS.refresh();
     };
 
-    initAOS();
+    window.addEventListener('scroll', refreshAOS);
+    window.addEventListener('hashchange', refreshAOS); // optional for smooth nav links
 
-  },[]);
+    return () => {
+      window.removeEventListener('scroll', refreshAOS);
+      window.removeEventListener('hashchange', refreshAOS);
+    };
+  }, []);
+
   return <div className='overflow-hidden'>
     <section id="home"><Hero/></section>
     <section id="projects"><Projects/></section>
