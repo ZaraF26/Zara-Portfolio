@@ -16,12 +16,12 @@ const Hero = () => {
 
       {/* Main content on top */}
       <div className='relative z-10 flex flex-col items-center '>
-        {/* <Image src="/images/s1.jpg" alt="heroimage" width={150} height={150} className="square-full border-3 border-red-800 "/> */}
-        <h1 className='text-2xl sm:text-4xl md:text-5xl lg:text-6-xl mt-6xl text-center font-bold tracking-wide'>Developer.Designer. 
+        {/* <Image src="/images/PH1.jpg" alt="heroimage" width={150} height={150} className="circle-full border-3 "/> */}
+        <h1 data-aos="fade-up" data-aos-delay="200" className='text-2xl sm:text-4xl md:text-5xl lg:text-6-xl mt-6xl text-center font-bold tracking-wide'>Developer.Designer. 
             <span className='text-red-800'>Dreamer</span> 
         </h1>
-        <h2 className='mt-5 text-lg px-2 text-center sm:text2xl font-medium flex items-center '>
-         {/* I&apos;m Zara - A */}
+        <h2 data-aos="fade-up" data-aos-delay="400" className='mt-5 text-lg px-2 text-center sm:text2xl font-medium flex items-center '>
+         I&apos;m Zara - A
             <span className='text-red-800 font-bold'>
                 <Typewriter options={{
                     strings:[

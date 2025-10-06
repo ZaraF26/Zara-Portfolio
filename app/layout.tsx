@@ -14,6 +14,8 @@ export const metadata: Metadata = {
 
 import { Analytics } from "@vercel/analytics/next"
 import ResponsiveNav from "@/components/Home/Navbar/ResponsiveNav";
+import Footer from "@/components/Home/Footer/Footer";
+import ScrollToTop from "@/components/Helper/ScrollToTop";
 
 export default function RootLayout({
   children,
@@ -26,8 +28,11 @@ export default function RootLayout({
         className={`${font.className} antialiased bg-[#F6EEE3]`}>
           <ResponsiveNav/>
         {children}
+        <Footer/>
+        <ScrollToTop/>
         <Analytics/>
       </body>
     </html>
   );
 }
+
