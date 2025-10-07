@@ -56,8 +56,17 @@ const Nav = ({openNav}:Props) => {
         </div>
         {/* buttons*/}
     <div className='flex items-center space-x-4'>
+
         {/*CV BUtton*/}
-        <button className='px-8 py-3.5 text-sm cursor-pointer rounded-lg bg-red-800 hover:bg-red-700 transition-all duration-300 text-white flex items-center space-x-2'>
+        <button 
+        onClick={() => {
+    const link = document.createElement("a");
+    link.href = "/Zara_Fredericks_CV.pdf"; // path to your CV in public folder
+    link.download = "Zara_Fredericks_CV.pdf"; // filename for download
+    link.click();
+  }}
+        
+        className='px-8 py-3.5 text-sm cursor-pointer rounded-lg bg-red-800 hover:bg-red-700 transition-all duration-300 text-white flex items-center space-x-2'>
           <BiDownload className='w-5 h-5'/>
           <span>Download CV</span>
         </button>
