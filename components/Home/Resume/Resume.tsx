@@ -18,7 +18,7 @@ const Resume = () => {
                     data-aos-anchoir-placement="top-bottom">
                     <ResumeCard Icon={FaCodepen} role="Backend Developer"/>
                     <ResumeCard Icon={FaReact} role="Front-end Developer "/>
-                    <ResumeCard Icon={BsDatabase} role="UI/UX Developer"/>
+                    <ResumeCard Icon={BsDatabase} role="UI/UX Designer"/>
 
                 </div>
         </div>
@@ -30,7 +30,7 @@ const Resume = () => {
             <div className='mt-10' data-aos="zoom-out" data-aos-anchoir-placement="top-bottom" data-aos-delay="300">
                     <ResumeCard Icon={BiBadge} role="WeThinkCode_" date="Sep 2024 - Present"/>
                     <ResumeCard Icon={FaReact} role="Cambridge AS Levels" date="Jan 2019 - Dec 2020"/>
-                    <ResumeCard Icon={BsDatabase} role="Islamia" date="Jan 2010 - Dec 2013"/>
+                    <ResumeCard Icon={BsDatabase} role="Islamia College" date="Jan 2010 - Dec 2013"/>
 
                 </div>
         </div>
