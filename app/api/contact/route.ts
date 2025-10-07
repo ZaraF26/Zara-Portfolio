@@ -35,3 +35,4 @@ export async function POST(req: Request) {
     return new Response(JSON.stringify({ message: "Failed to send email." }), { status: 500 });
   }
 }
+//added a chnage in the env file 
