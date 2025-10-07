@@ -49,7 +49,7 @@ const Contact = () => {
             Contact Me
           </h1>
           <p className='text-black mt-6 text-base sm:text-lg'>
-            Reach out today and let's discuss how I can help you achieve your goals.
+            Reach out today so and we can discuss how I can help you achieve your goals.
           </p>
           {/* Contact info */}
           <div className='mt-7'>
