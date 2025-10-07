@@ -106,14 +106,14 @@ const Contact = () => {
             className='px-4 py-3.5 mt-6 bg-[#eae3d6] text-black outline-none rounded-md w-full placeholder:text-black/70' 
             required
           />
-          <input 
+          {/* <input 
             type="text"
             name="phone"
             value={formData.phone}
             onChange={handleChange}
             placeholder='Mobile Number' 
             className='px-4 py-3.5 mt-6 bg-[#eae3d6] text-black outline-none rounded-md w-full placeholder:text-black/70' 
-          />
+          /> */}
           <textarea 
             name="message"
             value={formData.message}
