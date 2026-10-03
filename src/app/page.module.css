@@ -1,0 +1,59 @@
+.opening {
+  display: grid;
+  min-height: 100svh;
+  place-items: center;
+  padding: 3rem 1.5rem;
+}
+
+.note {
+  position: relative;
+  width: min(100%, 22rem);
+  min-height: 24rem;
+  padding: clamp(1.75rem, 6vw, 2.5rem);
+  border-radius: 1px 2px 2px 1px;
+  background: linear-gradient(178deg, #c87847 0%, var(--accent) 30%, #c57343 100%);
+  box-shadow:
+    0 1px 2px rgb(48 28 22 / 5%),
+    0 8px 16px -9px rgb(48 28 22 / 16%),
+    inset 0 1px 0 rgb(255 255 255 / 8%);
+  transform: rotate(-1deg);
+}
+
+.heading {
+  margin: 0;
+  font-family: var(--type-editorial);
+  font-size: clamp(2rem, 7vw, 2.65rem);
+  font-weight: 400;
+  line-height: 1.15;
+  letter-spacing: -0.035em;
+}
+
+.description {
+  margin: 1.75rem 0 0;
+  font-family: "Palatino Linotype", Palatino, "Book Antiqua", Georgia, serif;
+  font-size: 1.125rem;
+  line-height: 1.65;
+  text-wrap: pretty;
+}
+
+.invitation {
+  margin: 2.25rem 0 0;
+  font-family: var(--type-editorial);
+  font-size: 1.0625rem;
+  font-style: italic;
+  font-weight: 400;
+  line-height: 1.6;
+}
+
+@media (max-width: 360px) {
+  .note {
+    min-height: auto;
+    transform: rotate(-0.75deg);
+  }
+}
+
+@media (forced-colors: active) {
+  .note {
+    border: 1px solid CanvasText;
+  }
+}
